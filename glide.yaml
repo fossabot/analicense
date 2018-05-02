@@ -1,0 +1,25 @@
+package: github.com/ein-plus/enterprise-dashboard
+import:
+- package: github.com/ericpai/msops
+- package: github.com/go-redis/redis
+  version: v6.10.2
+- package: github.com/go-sql-driver/mysql
+  version: v1.3
+- package: github.com/gorilla/mux
+  version: v1.6.1
+- package: github.com/minio/minio
+  subpackages:
+  - pkg/madmin
+- package: github.com/samuel/go-zookeeper
+  subpackages:
+  - zk
+- package: github.com/spf13/cobra
+  version: v0.0.2
+- package: github.com/wvanbergen/kazoo-go
+- package: gopkg.in/olivere/elastic.v3
+  version: v6.1.16
+testImport:
+- package: github.com/stretchr/testify
+  version: v1.2.1
+  subpackages:
+  - assert
